@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla de adopciones</title>
+    <link rel="stylesheet" href="adopciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header class="estilomenu">
+        <section id="Logo">Logo</section>
+        <section id="Titulo">Titulo</section>
+        <section id="Login" onclick="window.location.href='login.html'" style="cursor: pointer;">Login</section>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul class="nav" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false"  id="index" onclick="window.location.href='index.html'">Inicio</button>
+            </li>
+            <li class="nav-item" role="presentation"> 
+              <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" id="adopciones" onclick="window.location.href='adopciones.html'">Adopciones</button>
+            </li>
+            
+            <li class="nav-item" role="presentation">
+              <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="donaciones" onclick="window.location.href='donaciones.html'">Donaciones</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="contactanos" onclick="window.location.href='contactanos.html'">Contáctanos PQRS</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="quienessomos" onclick="window.location.href='quienessomos.html'">Quienes somos</button>
+              </li>
+          </ul>
+    </nav>
+    <!-- Contenedor principal -->
+    <div class="container">
+
+        <!-- Barra lateral izquierda -->
+        <aside class="sidebariz">
+            <h2>Pasarelas de pago</h2>
+            <p>Pasarela de Pago con opciones de pago seguro (código QR, Paypal, tarjeta de crédito, etc.)</p>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <h2>Listado de Mascotas</h2>
+            <p>Lista desplegable con: Imagen, nombre y breve descripción de cada mascota disponible para adopción.
+                Información de la Mascota, lista desplegable con: En la foto de cada mascota se da ingreso a la información completa sobre cada animal, junto con el botón "Quiero Adoptar".
+            </p>
+            
+            <h2>Formulario de Registro</h2>
+            <p>Las personas interesadas en adoptar pueden diligenciar el formulario de adopción aquí.</p>
+            <button class="button">Quiero Adoptar</button>
+        </div>
+
+     <!-- Barra lateral derecha -->
+
+    <aside class="sidebarde">
+        <h2>Adóptame</h2>
+        <p> Condiciones y restricciones para adoptantes
+            (Listado de mascotas, información de las mascotas, formulario de registro, sólo personas que quieran adoptar)</p>
+    </aside>
+</div>
+
+    <!-- Pie de página -->
+     
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/tuPerfil" class="facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com/tuPerfil" class="twitter" target="_blank">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/tuPerfil" class="instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tuPerfil" class="linkedin" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>  
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+ 
+</body>
+</html>

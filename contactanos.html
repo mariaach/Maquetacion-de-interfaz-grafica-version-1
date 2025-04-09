@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla de Página principal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="contactanos.css">
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header class="estilomenu">
+        <section id="Logo">Logo</section>
+        <section id="Titulo">Titulo</section>
+        <section id="Login" onclick="window.location.href='login.html'" style="cursor: pointer;">Login</section>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul class="nav" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false"  id="index" onclick="window.location.href='index.html'">Inicio</button>
+            </li>
+            <li class="nav-item" role="presentation"> 
+              <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" id="adopciones" onclick="window.location.href='adopciones.html'">Adopciones</button>
+            </li>
+            
+            <li class="nav-item" role="presentation">
+              <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="donaciones" onclick="window.location.href='donaciones.html'">Donaciones</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="contactanos" onclick="window.location.href='contactanos.html'">Contáctanos PQRS</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="quienessomos" onclick="window.location.href='quienessomos.html'">Quienes somos</button>
+              </li>
+          </ul>
+    </nav>
+
+    <div class="form-container">
+        <header class="titulopqrs">Formulario de Peticiones, Quejas y Reclamos</header>
+        <form action="/enviar" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="tipo">Tipo de Solicitud:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="peticion">Petición</option>
+                <option value="queja">Queja</option>
+                <option value="reclamo">Reclamo</option>
+            </select>
+    
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+    <!-- Pie de página -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/tuPerfil" class="facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com/tuPerfil" class="twitter" target="_blank">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/tuPerfil" class="instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tuPerfil" class="linkedin" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>         
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
