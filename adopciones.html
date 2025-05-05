@@ -1,91 +1,312 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plantilla de adopciones</title>
-    <link rel="stylesheet" href="adopciones.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="adopciones.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Cabecera -->
     <header class="estilomenu">
-        <section id="Logo">Logo</section>
-        <section id="Titulo">Titulo</section>
-        <section id="Login" onclick="window.location.href='login.html'" style="cursor: pointer;">Login</section>
+      <section id="Logo">Logo</section>
+      <section id="Titulo">Titulo</section>
+      <section
+        id="Login"
+        onclick="window.location.href='login.html'"
+        style="cursor: pointer"
+      >
+        Login
+      </section>
     </header>
 
     <!-- Barra de navegación -->
     <nav>
-        <ul class="nav" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false"  id="index" onclick="window.location.href='index.html'">Inicio</button>
-            </li>
-            <li class="nav-item" role="presentation"> 
-              <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" id="adopciones" onclick="window.location.href='adopciones.html'">Adopciones</button>
-            </li>
-            
-            <li class="nav-item" role="presentation">
-              <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="donaciones" onclick="window.location.href='donaciones.html'">Donaciones</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="contactanos" onclick="window.location.href='contactanos.html'">Contáctanos PQRS</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="quienessomos" onclick="window.location.href='quienessomos.html'">Quienes somos</button>
-              </li>
-          </ul>
+      <ul
+        class="nav"
+        id="pillNav2"
+        role="tablist"
+        style="
+          --bs-nav-link-color: var(--bs-white);
+          --bs-nav-pills-link-active-color: var(--bs-primary);
+          --bs-nav-pills-link-active-bg: var(--bs-white);
+        "
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="index"
+            onclick="window.location.href='index.html'"
+          >
+            Inicio
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active rounded-5"
+            id="home-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            id="adopciones"
+            onclick="window.location.href='adopciones.html'"
+          >
+            Adopciones
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="profile-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="donaciones"
+            onclick="window.location.href='donaciones.html'"
+          >
+            Donaciones
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="contactanos"
+            onclick="window.location.href='contactanos.html'"
+          >
+            Contáctanos PQRS
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="quienessomos"
+            onclick="window.location.href='quienessomos.html'"
+          >
+            Quienes somos
+          </button>
+        </li>
+      </ul>
     </nav>
     <!-- Contenedor principal -->
     <div class="container">
+      <!-- Contenido principal -->
+      <div class="main-content">
+        <h2>Mascotas en adopción</h2>
+        <main>
+          <ul class="Mascotas">
+            <li>
+              <h2>Luna</h2>
+              <img
+                src="https://scontent-bog2-1.xx.fbcdn.net/v/t51.75761-15/488529509_17943303059978795_9000916931805761829_n.jpg?stp=dst-jpegr_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFPS1uFTx3cfoqQ6ka4O0GK6ALc93jOIyHoAtz3eM4jIXv0sULBTvWPfFbidkfAjmP2yQu6ET4o-NnNzcgYB_rA&_nc_ohc=qCRRi_lOZdMQ7kNvwHqR7FX&_nc_oc=AdnClGpYoUfIv5RgC0TJ-_fwzHJHkZlDbwSeqioBTiZx4bcraWsQAmvZacUUwjqG8oo&_nc_zt=23&se=-1&_nc_ht=scontent-bog2-1.xx&_nc_gid=SvgXGJoqGRo9-kEMv2s8iQ&oh=00_AfG3-hNO7oV13IAQQTSfomJC5_g8C9bznN7uIdMA0o2RFw&oe=681DE2E7"
+              />
+              <p class="mascota-descripcion">Feliz y amigable</p>
+              <p class="mascota-edad">7 años</p>
+              <button class="button">Quiero Adoptar</button>
+            </li>
+            <li>
+              <h2>Luna</h2>
+              <img
+                src="https://scontent-bog2-1.xx.fbcdn.net/v/t51.75761-15/488529509_17943303059978795_9000916931805761829_n.jpg?stp=dst-jpegr_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFPS1uFTx3cfoqQ6ka4O0GK6ALc93jOIyHoAtz3eM4jIXv0sULBTvWPfFbidkfAjmP2yQu6ET4o-NnNzcgYB_rA&_nc_ohc=qCRRi_lOZdMQ7kNvwHqR7FX&_nc_oc=AdnClGpYoUfIv5RgC0TJ-_fwzHJHkZlDbwSeqioBTiZx4bcraWsQAmvZacUUwjqG8oo&_nc_zt=23&se=-1&_nc_ht=scontent-bog2-1.xx&_nc_gid=SvgXGJoqGRo9-kEMv2s8iQ&oh=00_AfG3-hNO7oV13IAQQTSfomJC5_g8C9bznN7uIdMA0o2RFw&oe=681DE2E7"
+              />
+              <p class="mascota-descripcion">Feliz y amigable</p>
+              <p class="mascota-edad">7 años</p>
+              <button class="button">Quiero Adoptar</button>
+            </li>
+            <li>
+              <h2>Luna</h2>
+              <img
+                src="https://scontent-bog2-1.xx.fbcdn.net/v/t51.75761-15/488529509_17943303059978795_9000916931805761829_n.jpg?stp=dst-jpegr_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFPS1uFTx3cfoqQ6ka4O0GK6ALc93jOIyHoAtz3eM4jIXv0sULBTvWPfFbidkfAjmP2yQu6ET4o-NnNzcgYB_rA&_nc_ohc=qCRRi_lOZdMQ7kNvwHqR7FX&_nc_oc=AdnClGpYoUfIv5RgC0TJ-_fwzHJHkZlDbwSeqioBTiZx4bcraWsQAmvZacUUwjqG8oo&_nc_zt=23&se=-1&_nc_ht=scontent-bog2-1.xx&_nc_gid=SvgXGJoqGRo9-kEMv2s8iQ&oh=00_AfG3-hNO7oV13IAQQTSfomJC5_g8C9bznN7uIdMA0o2RFw&oe=681DE2E7"
+              />
+              <p class="mascota-descripcion">Feliz y amigable</p>
+              <p class="mascota-edad">7 años</p>
+              <button class="button">Quiero Adoptar</button>
+            </li>
+            <li>
+              <h2>Luna</h2>
+              <img
+                src="https://scontent-bog2-1.xx.fbcdn.net/v/t51.75761-15/488529509_17943303059978795_9000916931805761829_n.jpg?stp=dst-jpegr_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFPS1uFTx3cfoqQ6ka4O0GK6ALc93jOIyHoAtz3eM4jIXv0sULBTvWPfFbidkfAjmP2yQu6ET4o-NnNzcgYB_rA&_nc_ohc=qCRRi_lOZdMQ7kNvwHqR7FX&_nc_oc=AdnClGpYoUfIv5RgC0TJ-_fwzHJHkZlDbwSeqioBTiZx4bcraWsQAmvZacUUwjqG8oo&_nc_zt=23&se=-1&_nc_ht=scontent-bog2-1.xx&_nc_gid=SvgXGJoqGRo9-kEMv2s8iQ&oh=00_AfG3-hNO7oV13IAQQTSfomJC5_g8C9bznN7uIdMA0o2RFw&oe=681DE2E7"
+              />
+              <p class="mascota-descripcion">Feliz y amigable</p>
+              <p class="mascota-edad">7 años</p>
+              <button class="button">Quiero Adoptar</button>
+            </li>
+          </ul>
+        </main>
 
-        <!-- Barra lateral izquierda -->
-        <aside class="sidebariz">
-            <h2>Pasarelas de pago</h2>
-            <p>Pasarela de Pago con opciones de pago seguro (código QR, Paypal, tarjeta de crédito, etc.)</p>
-        </aside>
+        <p>
+          Las personas interesadas en adoptar pueden diligenciar el formulario
+          de adopción haciendo click en el botón.
+        </p>
+      </div>
 
-        <!-- Contenido principal -->
-        <div class="main-content">
-            <h2>Listado de Mascotas</h2>
-            <p>Lista desplegable con: Imagen, nombre y breve descripción de cada mascota disponible para adopción.
-                Información de la Mascota, lista desplegable con: En la foto de cada mascota se da ingreso a la información completa sobre cada animal, junto con el botón "Quiero Adoptar".
+
+      <!-- Barra lateral derecha -->
+
+      <aside class="sidebarde">
+
+        <h5>Requisitos para adoptantes</h5>
+
+        <p>
+          <strong
+            >Nos encantaría poder entregar un peludito a cada persona que desee
+            adoptar, pero la gran responsabilidad que sentimos con nuestros
+            ángeles nos obliga a tener unos requisitos mínimos que nos permitan
+            tener cierta seguridad en que los hogares donde llegarán serán los
+            definitivos.</strong
+          >
+        </p>
+        <p>
+          💛&nbsp;<span
+            >La persona responsable del peludito debe ser mayor de 25
+            años.</span
+          ><br /><span
+            >💛 Este o esta pequeñita será miembro de la familia alrededor de 15
+            años.</span
+          ><br /><span>💛 Diligencia el Pre-formulario de Adopción</span
+          ><br /><span
+            >💛 Los datos ingresados serán verificados por funcionarios de la
+            Fundación (esta verificación tarda 3 días hábiles).</span
+          ><br /><span
+            >💛 Si tu solicitud y todo está en orden, nos contactaremos contigo
+            para coordinar el día en que el peludito que escogiste llegue a tu
+            casa.</span
+          ><br /><span
+            >💛 Es importante tener el tiempo y el espacio para que tú y ellos
+            estén muy bien.</span
+          ><br /><span
+            >💛&nbsp;Es importante contar con estabilidad económica, desde el
+            primer momento que llegue a tus manos será una gran responsabilidad
+            y requerirá de muchos cuidados y mimos para vivir feliz. Recuerda,
+            todos han sido rescatados.</span
+          ><br /><span></span>
+        </p>
+        <p>
+          <span
+            >🚫 Si vives en una zona de sobrepoblación canina o felina, te
+            pedimos adoptes tú mismo a uno de la calle, se tú el salvador de ese
+            peludito, así juntos podremos salvar más vidas!!
+          </span>
+        </p>
+        <p>
+          <span
+            >⚠️ Se deben cumplir los compromisos y obligaciones que figuran en
+            el Contrato de Adopción.</span
+          ><br /><span
+            >⚠️Seguimos en constante seguimiento y comunicación para saber cómo
+            va todo. Ellos siempre serán nuestros hijitos.</span
+          >
+        </p>
+
+        
+
+        <h2>Preguntas frecuentes</h2>
+          <h5 class="et_pb_toggle_title">
+            ¿Cuál es el proceso para adoptar un animal de la fundación?
+          </h5>
+          <div class="et_pb_toggle_content clearfix">
+            <p>
+              <strong
+                >Tenemos una gran cantidad de solicitudes y pocos recursos
+                humanos para el estudio de estos, por eso te pedimos tener un
+                poco de paciencia y respeto, leer con detalle y cuidado la
+                información suministrada para empezar el proceso de
+                adopción.</strong
+              >
             </p>
-            
-            <h2>Formulario de Registro</h2>
-            <p>Las personas interesadas en adoptar pueden diligenciar el formulario de adopción aquí.</p>
-            <button class="button">Quiero Adoptar</button>
-        </div>
-
-     <!-- Barra lateral derecha -->
-
-    <aside class="sidebarde">
-        <h2>Adóptame</h2>
-        <p> Condiciones y restricciones para adoptantes
-            (Listado de mascotas, información de las mascotas, formulario de registro, sólo personas que quieran adoptar)</p>
-    </aside>
-</div>
+            <p><strong></strong></p>
+            <ol>
+              <li>
+                Escoger el perrito o gatito que desees adoptar teniendo en
+                cuenta el espacio que dispones, su edad y tamaño.
+                
+              </li>
+              <li>
+                Diligencia el
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdPSI3mahXosffWR_VUHHij1YXiR71YWBBKoPAsgFHN1GX5cQ/viewform?usp=sf_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pre- Formulario de Adopción</a
+                >. Los datos ingresados serán verificados por funcionarios de la
+                Fundación (esta verificación tarda 3 días calendario). Si no
+                sigues en el proceso te enviaremos un correo electrónico
+                informándote.
+              </li>
+              <li>
+                <span
+                  >Si tu formulario es aprobado, te llamaremos para darte todas
+                  las instrucciones para que grabes un video del lugar donde
+                  vivirá el peludo y nos lo envies.</span
+                >
+              </li>
+              <li>
+                <span
+                  >Revisaremos tu solicitud y si todo está en orden, nos
+                  contactaremos para coordinar el día en que el peludito que
+                  escogiste llegue a tu casa.</span
+                >
+              </li>
+            </ol>
+          </div>
+      </aside>
+    </div>
 
     <!-- Pie de página -->
-     
+
     <footer>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/tuPerfil" class="facebook" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.twitter.com/tuPerfil" class="twitter" target="_blank">
-            <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/tuPerfil" class="instagram" target="_blank">
-            <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/tuPerfil" class="linkedin" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div>  
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/tuPerfil"
+          class="facebook"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.twitter.com/tuPerfil"
+          class="twitter"
+          target="_blank"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/tuPerfil"
+          class="instagram"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/tuPerfil"
+          class="linkedin"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
     </footer>
- 
-</body>
+  </body>
 </html>

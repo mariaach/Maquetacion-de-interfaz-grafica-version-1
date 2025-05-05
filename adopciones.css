@@ -80,29 +80,8 @@ nav {
     padding: auto;
    }
 
-/* Barra lateral */
-
-.sidebar {
-    width: 35%; /* Ajusta el ancho según necesites */
-    margin: 0 auto; /* Centra el contenedor */
-    text-align: center; /* Centra el contenido de texto */
-    padding: 20px; /* Añade espacio interno */
-    background-color: #f5f5f5; /* Color de fondo opcional */
-}
-.sidebarde {
-    width: 50%;
-    background-color: #F4EFEF; /* Blanco suave, ideal para destacar contenido */
-    padding: 20px;
-   
-}
-
-.sidebariz {
-    width: 50%;
-    background-color: #F4EFEF; /* Blanco suave, ideal para destacar contenido */
-    padding: 20px;
-}
-
 /* Contenido principal */
+
 .main-content {
     width: 60%;                       /* Ajusta el ancho para acompañar las barras laterales */
     margin: 0 auto;                   /* Centra el contenedor principal */
@@ -114,22 +93,73 @@ nav {
     box-sizing: border-box;           /* Asegura que el padding no afecte el ancho total */
 }
 
-/* Encabezados en el contenido principal */
-.main-content h2 {
-    color: #333333;                   /* Color de texto oscuro */
-    font-size: 1.8em;                 /* Tamaño de fuente grande */
-    margin-bottom: 20px;              /* Espacio inferior */
+.Mascotas {
+    list-style: none;               /* Elimina los puntos de la lista */
+    display: flex;                  /* Alinea los elementos en fila */
+    flex-wrap: wrap;               /* Permite que se acomoden en varias filas si no caben */
+    gap: 20px;                     /* Espacio entre mascotas */
+    justify-content: center;      /* Centra horizontalmente */
+    padding: 0;
+    margin: 30px auto;
+    max-width: 1200px;
+  }
+  
+  .Mascotas li {
+    background-color: #fffefb;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Mascotas li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Mascotas img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .Mascotas h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0 5px;
+  }
+  
+  .mascota-descripcion,
+  .producto-descripcion {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .mascota-edad,
+  .producto-precio {
+    font-size: 16px;
     font-weight: bold;
-    text-decoration: underline; 
-}
+    color: #27ae60; /* Verde para precios o info importante */
+  }
+  
 
-/* Párrafos */
-.main-content p {
-    color: #555555;                   /* Color de texto gris oscuro */
-    font-size: 1.1em;                 /* Tamaño de fuente para legibilidad */
-    line-height: 1.6;                 /* Altura de línea para legibilidad */
-    margin-bottom: 20px;
-}
+/* Encabezados en el contenido principal */
+
+.main-content h2 {
+    font-size: 30px;
+    color: #2a2a2a;
+    text-align: center;
+    margin: 40px 40px 40px 40px;
+    font-weight: bold;
+    font-family: 'Lora', Georgia, "Times New Roman", serif;
+    padding-bottom: 5px;
+  }
 
 /* Botones dentro del contenido principal */
 .main-content .button {
@@ -146,6 +176,18 @@ nav {
 .main-content .button:hover {
     background-color: #45a049;        /* Cambio de color en hover */
 }
+
+/* Barra lateral derecha */
+
+
+
+
+
+
+
+
+
+
 
 /* Pie de página */
 footer {
