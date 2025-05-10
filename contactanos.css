@@ -15,6 +15,7 @@ body {
 
 /* Cabecera */
 
+
 .estilomenu {
     display: flex;
     align-items: center; /* Centra verticalmente los elementos */
@@ -28,6 +29,14 @@ body {
     margin: 10px 10px 10px 10px;
 }
 
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+ 
 #Login {
     margin-left: auto; /* Empuja el elemento hacia la derecha */
 }
@@ -105,6 +114,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centra los elementos del formulario */
+    padding: 15px ;
 }
 
 /* Estilos de los campos del formulario */
@@ -113,6 +123,7 @@ form label {
     margin-top: 10px;
     text-align: left;
     width: 100%;
+    
 }
 
 form input[type="text"],

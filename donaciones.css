@@ -15,6 +15,7 @@ body {
 
 /* Cabecera */
 
+
 .estilomenu {
     display: flex;
     align-items: center; /* Centra verticalmente los elementos */
@@ -28,6 +29,14 @@ body {
     margin: 10px 10px 10px 10px;
 }
 
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+ 
 #Login {
     margin-left: auto; /* Empuja el elemento hacia la derecha */
 }
@@ -45,7 +54,6 @@ header {
     text-align: center;
 }
 
-/* Barra de navegación */
 
 /* Barra de navegación */
 nav {
@@ -80,7 +88,9 @@ nav {
     padding: auto;
    }
 
+
 /* Contenido principal */
+
 .contentp {
     background-color: #E2F0D9;  /*Verde muy claro pastel, representando naturaleza y frescura */
     padding: 10%; /*texto*/

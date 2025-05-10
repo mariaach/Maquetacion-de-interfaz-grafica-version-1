@@ -10,10 +10,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #F0F9F9; /* Fondo pastel suave para un ambiente acogedor */
+    background-color: #f9f1f0; /* Fondo pastel suave para un ambiente acogedor */
 }
 
 /* Cabecera */
+
 
 .estilomenu {
     display: flex;
@@ -27,6 +28,15 @@ body {
 #Logo, #Titulo {
     margin: 10px 10px 10px 10px;
 }
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+ 
 
 #Login {
     margin-left: auto; /* Empuja el elemento hacia la derecha */
@@ -131,22 +141,6 @@ nav {
     margin-bottom: 20px;
 }
 
-/* Botones dentro del contenido principal */
-.main-content .button {
-    padding: 12px 24px;               /* Espaciado interior del botón */
-    color: #FFFFFF;                   /* Texto en blanco */
-    background-color: #4CAF50;        /* Fondo verde */
-    border: none;
-    border-radius: 5px;               /* Bordes redondeados */
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Transición suave en el cambio de color */
-}
-
-.main-content .button:hover {
-    background-color: #45a049;        /* Cambio de color en hover */
-}
-
 /* Pie de página */
 footer {
     background-color: #302f2f;
@@ -195,7 +189,3 @@ footer p {
 .social-icons a:hover {
     background-color: #555;
 }
-
-input, select, textarea { margin-top: 5px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; } 
-button { margin-top: 20px; padding: 10px; background-color: #4CAF50; color: rgb(7, 0, 0); border: none; border-radius: 5px; cursor: pointer; } 
-button:hover { background-color: #45a049; }

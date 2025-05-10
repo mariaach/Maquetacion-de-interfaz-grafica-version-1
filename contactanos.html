@@ -1,83 +1,257 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plantilla de Página principal</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="contactanos.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="contactanos.css" />
+  </head>
+  <body>
     <!-- Cabecera -->
     <header class="estilomenu">
-        <section id="Logo">Logo</section>
-        <section id="Titulo">Titulo</section>
-        <section id="Login" onclick="window.location.href='login.html'" style="cursor: pointer;">Login</section>
+      <section id="Logo">
+        <img
+          src="https://images.icon-icons.com/1949/PNG/512/free-30-instagram-stories-icons53_122600.png"
+          alt="Logo Instagram"
+          class="logo"
+        />
+      </section>
+      <section id="Titulo">Fundación Salvando Huellas</section>
+      <section
+        id="Login"
+        onclick="window.location.href='login.html'"
+        style="cursor: pointer"
+      >
+        Login
+      </section>
     </header>
 
     <!-- Barra de navegación -->
     <nav>
-        <ul class="nav" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false"  id="index" onclick="window.location.href='index.html'">Inicio</button>
-            </li>
-            <li class="nav-item" role="presentation"> 
-              <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" id="adopciones" onclick="window.location.href='adopciones.html'">Adopciones</button>
-            </li>
-            
-            <li class="nav-item" role="presentation">
-              <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="donaciones" onclick="window.location.href='donaciones.html'">Donaciones</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="contactanos" onclick="window.location.href='contactanos.html'">Contáctanos PQRS</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="quienessomos" onclick="window.location.href='quienessomos.html'">Quienes somos</button>
-              </li>
-          </ul>
+      <ul
+        class="nav"
+        id="pillNav2"
+        role="tablist"
+        style="
+          --bs-nav-link-color: var(--bs-white);
+          --bs-nav-pills-link-active-color: var(--bs-primary);
+          --bs-nav-pills-link-active-bg: var(--bs-white);
+        "
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="index"
+            onclick="window.location.href='index.html'"
+          >
+            Inicio
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active rounded-5"
+            id="home-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            id="adopciones"
+            onclick="window.location.href='adopciones.html'"
+          >
+            Adopciones
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="profile-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="donaciones"
+            onclick="window.location.href='donaciones.html'"
+          >
+            Donaciones
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="contactanos"
+            onclick="window.location.href='contactanos.html'"
+          >
+            Contáctanos PQRS
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="quienessomos"
+            onclick="window.location.href='quienessomos.html'"
+          >
+            Quienes somos
+          </button>
+        </li>
+      </ul>
     </nav>
 
-    <div class="form-container">
-        <header class="titulopqrs">Formulario de Peticiones, Quejas y Reclamos</header>
-        <form action="/enviar" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-    
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="tipo">Tipo de Solicitud:</label>
-            <select id="tipo" name="tipo" required>
-                <option value="peticion">Petición</option>
-                <option value="queja">Queja</option>
-                <option value="reclamo">Reclamo</option>
-            </select>
-    
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-    
-            <button type="submit">Enviar</button>
-        </form>
+    <!-- Formulario PQRS  -->
+<div class="form-container">
+    <header class="titulopqrs">Formulario de Peticiones, Quejas y Reclamos</header>
+    <form id="formularioPQR">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tipo">Tipo de Solicitud:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="peticion">Petición</option>
+            <option value="queja">Queja</option>
+            <option value="reclamo">Reclamo</option>
+        </select>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+<!-- Modal emergente -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <p>Se ha enviado el mensaje de forma correcta</p>
+        <button id="cerrarModal">Cerrar</button>
     </div>
-    
+</div>
+
+<!-- Estilos del modal -->
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0; top: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-content {
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        text-align: center;
+    }
+
+    .modal-content button {
+        margin-top: 15px;
+        padding: 6px 14px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .modal-content button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<!-- Script -->
+<script>
+    const formulario = document.getElementById("formularioPQR");
+    const modal = document.getElementById("modal");
+    const cerrarModal = document.getElementById("cerrarModal");
+
+    // Mostrar modal al enviar el formulario
+    formulario.addEventListener("submit", function(event) {
+        event.preventDefault();
+        modal.style.display = "flex";
+    });
+
+    // Cerrar modal al hacer clic en el botón
+    cerrarModal.addEventListener("click", function() {
+        modal.style.display = "none";
+        formulario.reset(); // Limpiar solo cuando se cierra correctamente
+    });
+
+    // También cerrar al hacer clic fuera del contenido
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+            formulario.reset();
+        }
+    });
+
+    // Limpiar formulario al volver a la pestaña SOLO si el modal no está visible
+    document.addEventListener("visibilitychange", function() {
+        if (document.visibilityState === "visible" && modal.style.display === "none") {
+            formulario.reset();
+        }
+    });
+</script>
+
+
     <!-- Pie de página -->
     <footer>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/tuPerfil" class="facebook" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.twitter.com/tuPerfil" class="twitter" target="_blank">
-            <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/tuPerfil" class="instagram" target="_blank">
-            <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/tuPerfil" class="linkedin" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div>         
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/tuPerfil"
+          class="facebook"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.twitter.com/tuPerfil"
+          class="twitter"
+          target="_blank"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/tuPerfil"
+          class="instagram"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/tuPerfil"
+          class="linkedin"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
     </footer>
-</body>
+  </body>
 </html>

@@ -28,6 +28,15 @@ body {
     margin: 10px 10px 10px 10px;
 }
 
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+ 
+
 #Login {
     margin-left: auto; /* Empuja el elemento hacia la derecha */
 }
@@ -179,15 +188,77 @@ nav {
 
 /* Barra lateral derecha */
 
-
-
-
-
-
-
-
-
-
+.sidebarde {
+    font-size: 20px;
+    background-color: #fff8f0;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    font-family: 'Lora', Georgia, "Times New Roman", serif;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .sidebarde h6{
+    font-size: 25px;
+  }
+  .sidebarde h2,
+  .sidebarde h5 {
+    color: #070707;
+    margin-top: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .sidebarde p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .sidebarde strong {
+    color: #264653;
+    font-weight: 600;
+  }
+  
+  .sidebarde span {
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+  
+  .sidebarde a {
+    color: #2a9d8f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .sidebarde a:hover {
+    text-decoration: underline;
+  }
+  
+  .sidebarde ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .sidebarde ol li {
+    margin-bottom: 0.7rem;
+    color: #555;
+  }
+  
+  .et_pb_toggle_title {
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #fae1dd;
+    padding: 0.6rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .et_pb_toggle_content {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+  }
 
 /* Pie de página */
 footer {
