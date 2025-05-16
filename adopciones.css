@@ -54,7 +54,6 @@ header {
     text-align: center;
 }
 
-/* Barra de navegación */
 
 /* Barra de navegación */
 nav {
@@ -92,7 +91,7 @@ nav {
 /* Contenido principal */
 
 .main-content {
-    width: 60%;                       /* Ajusta el ancho para acompañar las barras laterales */
+    width: 100%;                       /* Ajusta el ancho para acompañar las barras laterales */
     margin: 0 auto;                   /* Centra el contenedor principal */
     padding: 30px;                    /* Espacio interno */
     background-color: #FFFFFF;        /* Fondo blanco */
@@ -189,19 +188,28 @@ nav {
 /* Barra lateral derecha */
 
 .sidebarde {
-    font-size: 20px;
+  width: 50%;
+    font-size: 15px;
     background-color: #fff8f0;
     padding: 1.5rem;
-    margin: 1rem 0;
+    margin: auto;
     border-radius: 12px;
     font-family: 'Lora', Georgia, "Times New Roman", serif;
     color: #333;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   }
-  
+
+.sidebarde-mensaje {
+ font-family: 'Lora', Georgia, "Times New Roman", serif;
+ font-size: 20px;
+ color: #747775;
+ text-align: center;
+  }
+
   .sidebarde h6{
     font-size: 25px;
   }
+
   .sidebarde h2,
   .sidebarde h5 {
     color: #070707;

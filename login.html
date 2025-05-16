@@ -7,25 +7,105 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>  
-    <nav>
+   <nav>
     <div class="regresar">
         <header>
             <button id="adopciones" onclick="window.location.href='adopciones.html'">Regresar</button>
         </header>
     </div>
-        <br>
-            <div class="login-container">
-            <h2>Login</h2>
-            <form action="your-login-script.php" method="POST">
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required placeholder="Introduce tu correo electrónico">
-                
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" required placeholder="Introduce tu contraseña">
-                
-                <button type="submit">Iniciar sesión</button>
-            </form>
-        </div>
-    </nav>
+    <br>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" action="your-login-script.php" method="POST">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required placeholder="Introduce tu correo electrónico">
+            
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required placeholder="Introduce tu contraseña">
+            
+            <button type="submit">Iniciar sesión</button>
+        </form>
+    </div>
+</nav>
+
+
+<!-- Modal emergente -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <p>Inicio de sesión exitoso</p>
+        <button id="cerrarModal">Cerrar</button>
+    </div>
+</div>
+
+<!-- Estilos para modal -->
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-content {
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        text-align: center;
+    }
+
+    .modal-content button {
+        margin-top: 15px;
+        padding: 6px 14px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .modal-content button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<!-- JavaScript -->
+<script>
+    const loginForm = document.getElementById("loginForm");
+    const modal = document.getElementById("modal");
+    const cerrarModal = document.getElementById("cerrarModal");
+
+    // Mostrar el modal al enviar el formulario
+    loginForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevenir envío real
+        modal.style.display = "flex";
+    });
+
+    // Cerrar el modal al hacer clic en el botón
+    cerrarModal.addEventListener("click", function() {
+        modal.style.display = "none";
+        loginForm.reset(); // Limpiar formulario al cerrar
+    });
+
+    // Cerrar si se hace clic fuera del contenido del modal
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+            loginForm.reset();
+        }
+    });
+
+    // Limpiar formulario al volver a la pestaña, solo si el modal no está visible
+    document.addEventListener("visibilitychange", function() {
+        if (document.visibilityState === "visible" && modal.style.display === "none") {
+            loginForm.reset();
+        }
+    });
+</script>
+
 </body>
 </html>

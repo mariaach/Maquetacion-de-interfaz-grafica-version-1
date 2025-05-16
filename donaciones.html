@@ -1,159 +1,281 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plantilla de Página principal</title>
-    <link rel="stylesheet" href="donaciones.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="donaciones.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Cabecera -->
     <header class="estilomenu">
-        <section id="Logo"><img src="https://images.icon-icons.com/1949/PNG/512/free-30-instagram-stories-icons53_122600.png" alt="Logo Instagram" class="logo"></section>
-        <section id="Titulo">Fundación Salvando Huellas</section>
-        <section id="Login" onclick="window.location.href='login.html'" style="cursor: pointer;">Login</section>
+      <section id="Logo">
+        <img
+          src="https://images.icon-icons.com/1949/PNG/512/free-30-instagram-stories-icons53_122600.png"
+          alt="Logo Instagram"
+          class="logo"
+        />
+      </section>
+      <section id="Titulo">Fundación Salvando Huellas</section>
+      <section
+        id="Login"
+        onclick="window.location.href='login.html'"
+        style="cursor: pointer"
+      >
+        Login
+      </section>
     </header>
 
     <!-- Barra de navegación PARA MODIFICAR-->
     <nav>
-        <ul class="nav" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false"  id="index" onclick="window.location.href='index.html'">Inicio</button>
-            </li>
-            <li class="nav-item" role="presentation"> 
-              <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" id="adopciones" onclick="window.location.href='adopciones.html'">Adopciones</button>
-            </li>
-            
-            <li class="nav-item" role="presentation">
-              <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="donaciones" onclick="window.location.href='donaciones.html'">Donaciones</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="contactanos" onclick="window.location.href='contactanos.html'">Contáctanos PQRS</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="quienessomos" onclick="window.location.href='quienessomos.html'">Quienes somos</button>
-              </li>
-          </ul>
+      <ul
+        class="nav"
+        id="pillNav2"
+        role="tablist"
+        style="
+          --bs-nav-link-color: var(--bs-white);
+          --bs-nav-pills-link-active-color: var(--bs-primary);
+          --bs-nav-pills-link-active-bg: var(--bs-white);
+        "
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="index"
+            onclick="window.location.href='index.html'"
+          >
+            Inicio
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active rounded-5"
+            id="home-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            id="adopciones"
+            onclick="window.location.href='adopciones.html'"
+          >
+            Adopciones
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="profile-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="donaciones"
+            onclick="window.location.href='donaciones.html'"
+          >
+            Donaciones
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="contactanos"
+            onclick="window.location.href='contactanos.html'"
+          >
+            Contáctanos PQRS
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="quienessomos"
+            onclick="window.location.href='quienessomos.html'"
+          >
+            Quienes somos
+          </button>
+        </li>
+      </ul>
     </nav>
 
     <!-- Contenedor principal -->
     <div class="container">
-      
-         <!-- Contenido principal -->
-        <main class="contentp">
-            <!DOCTYPE html>
-            <html lang="es">
-            <head>
-              <meta charset="UTF-8">
-              <title>Transición de Imágenes con Texto</title>
-              <style>
-                .slider-container {
-                  width: 600px;
-                  height: 400px;
-                  overflow: hidden;
-                  position: relative;
-                  margin: auto;
-                  border-radius: 10px;
-                  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      <!-- Contenido principal -->
+      <main class="contentp">
+        <!DOCTYPE html>
+        <html lang="es">
+          <head>
+            <meta charset="UTF-8" />
+            <title>Transición de Imágenes con Texto</title>
+            <style>
+              .slider-container {
+                width: 600px;
+                height: 400px;
+                overflow: hidden;
+                position: relative;
+                margin: auto;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+              }
+
+              .slider {
+                display: flex;
+                width: calc(600px * 6);
+                animation: slide 18s infinite;
+              }
+
+              .slide {
+                position: relative;
+                width: 600px;
+                height: 400px;
+              }
+
+              .slide img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+
+              .caption {
+                font-family: Georgia, "Times New Roman", Times, serif;
+                position: absolute;
+                bottom: 20px;
+                left: 150px;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 5px;
+                font-size: 2.5rem;
+              }
+
+              @keyframes slide {
+                0% {
+                  transform: translateX(0);
                 }
-            
-                .slider {
-                  display: flex;
-                  width: calc(600px * 6);
-                  animation: slide 18s infinite;
+                16.66% {
+                  transform: translateX(-600px);
                 }
-            
-                .slide {
-                  position: relative;
-                  width: 600px;
-                  height: 400px;
+                33.33% {
+                  transform: translateX(-1200px);
                 }
-            
-                .slide img {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
+                50% {
+                  transform: translateX(-1800px);
                 }
-            
-                .caption {
-                  font-family:Georgia, 'Times New Roman', Times, serif;
-                  position: absolute;
-                  bottom: 20px;
-                  left: 150px;
-                  background-color: rgba(0, 0, 0, 0.5);
-                  color: #fff;
-                  padding: 10px 15px;
-                  border-radius: 5px;
-                  font-size: 2.5rem;
+                66.66% {
+                  transform: translateX(-2400px);
                 }
-            
-                @keyframes slide {
-                  0% { transform: translateX(0); }
-                  16.66% { transform: translateX(-600px); }
-                  33.33% { transform: translateX(-1200px); }
-                  50% { transform: translateX(-1800px); }
-                  66.66% { transform: translateX(-2400px); }
-                  83.33% { transform: translateX(-3000px); }
-                  100% { transform: translateX(0); }
+                83.33% {
+                  transform: translateX(-3000px);
                 }
-              </style>
-            </head>
-            <body>
-            
-              <div class="slider-container">
-                <div class="slider">
-                  <div class="slide">
-                    <img src="https://st2.depositphotos.com/1146092/5837/i/450/depositphotos_58371397-stock-photo-donation-box-dog.jpg" alt="Imagen 1">
-                    <div class="caption">Haz tu aporte</div>
-                  </div>
-                  <div class="slide">
-                    <img src="https://animallium.com/wp-content/uploads/2024/05/plan-perros-clasico-mensual2.jpg" alt="Imagen 2">
-                    <div class="caption">Plan mensual</div>
-                  </div>
-                  <div class="slide">
-                    <img src="https://www.fundaciontepa.org/wp-content/uploads/2020/03/img-03.jpg" alt="Imagen 3">
-                    <div class="caption">Alimentame</div>
-                  </div>
-                  <div class="slide">
-                    <img src="https://scontent-bog2-1.xx.fbcdn.net/v/t51.75761-15/479252966_17937311924978795_2022527226286542248_n.jpg?stp=dst-jpegr_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHzqFEYXjq4aAbX4_g4gXGnTcyzutMq5rJNzLO60yrmshzgK8hxebqvybE3DTArEPL_gT2dV2xStUfQz6pG33km&_nc_ohc=WEjPimkGPMEQ7kNvwGNYapo&_nc_oc=AdmAjQ_jdw5656da9XUEm85tmFf0quuUaHfavSiqPJl-9SR4KMXpCj6QdY_-ljiV9Bk&_nc_zt=23&se=-1&_nc_ht=scontent-bog2-1.xx&_nc_gid=C4Lio8i_PL8WDukeTHE8Lg&oh=00_AfKJJNQwNVLMleBH3QRv5O9qQzK2AK0j4JsLg0Yl5z65tQ&oe=682474B9" alt="Imagen 4">
-                    <div class="caption">Adoptame</div>
-                  </div>
-                  <div class="slide">
-                    <img src="https://scontent-bog2-2.xx.fbcdn.net/v/t51.75761-15/480920054_17938214447978795_615862500584472079_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF6NOZX-PA--eYO5CmuXMS8RJ0b92Y3WHFEnRv3ZjdYcYYCQW0rfeCPJsOCESQbNNI5EhJbTf3XF4Ez77gXACgH&_nc_ohc=URiC3ylt7roQ7kNvwEIfwdl&_nc_oc=AdkJoydaOPEBVMhF-CkzsaWz2a1LrX80o_3xLEsWgtdnhzloWzxOZTAvveQP1yrYmWI&_nc_zt=23&_nc_ht=scontent-bog2-2.xx&_nc_gid=5G7_4WtFpMcKsKDsfTzuOw&oh=00_AfJXDoDmFoO-nj4Z-a9qJT5ozZDVu3oYap5GzeJb_qUyhQ&oe=68245445" alt="Imagen 5">
-                    <div class="caption">Rifas</div>
-                  </div>
-                  <div class="slide">
-                    <img src="https://play-lh.googleusercontent.com/xaOvGSWl-mzSwtIKpeA9vOY28_C4a_VcJKrFXVFO--gvPiBy_OilGSbsDnTWNzBEtxGS=w600-h300-pc0xffffff-pd" alt="Imagen 6">
-                    <div class="caption">Bingo bailable</div>
-                  </div>
+                100% {
+                  transform: translateX(0);
+                }
+              }
+            </style>
+          </head>
+          <body>
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slide">
+                  <img
+                    src="https://st2.depositphotos.com/1146092/5837/i/450/depositphotos_58371397-stock-photo-donation-box-dog.jpg"
+                    alt="Imagen 1"
+                  />
+                  <div class="caption">Haz tu aporte</div>
+                </div>
+                <div class="slide">
+                  <img
+                    src="https://animallium.com/wp-content/uploads/2024/05/plan-perros-clasico-mensual2.jpg"
+                    alt="Imagen 2"
+                  />
+                  <div class="caption">Plan mensual</div>
+                </div>
+                <div class="slide">
+                  <img
+                    src="https://www.fundaciontepa.org/wp-content/uploads/2020/03/img-03.jpg"
+                    alt="Imagen 3"
+                  />
+                  <div class="caption">Alimentame</div>
+                </div>
+                <div class="slide">
+                  <img
+                    src="https://scontent-bog2-1.xx.fbcdn.net/v/t51.75761-15/479252966_17937311924978795_2022527226286542248_n.jpg?stp=dst-jpegr_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHzqFEYXjq4aAbX4_g4gXGnTcyzutMq5rJNzLO60yrmshzgK8hxebqvybE3DTArEPL_gT2dV2xStUfQz6pG33km&_nc_ohc=WEjPimkGPMEQ7kNvwGNYapo&_nc_oc=AdmAjQ_jdw5656da9XUEm85tmFf0quuUaHfavSiqPJl-9SR4KMXpCj6QdY_-ljiV9Bk&_nc_zt=23&se=-1&_nc_ht=scontent-bog2-1.xx&_nc_gid=C4Lio8i_PL8WDukeTHE8Lg&oh=00_AfKJJNQwNVLMleBH3QRv5O9qQzK2AK0j4JsLg0Yl5z65tQ&oe=682474B9"
+                    alt="Imagen 4"
+                  />
+                  <div class="caption">Adoptame</div>
+                </div>
+                <div class="slide">
+                  <img
+                    src="https://scontent-bog2-2.xx.fbcdn.net/v/t51.75761-15/480920054_17938214447978795_615862500584472079_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF6NOZX-PA--eYO5CmuXMS8RJ0b92Y3WHFEnRv3ZjdYcYYCQW0rfeCPJsOCESQbNNI5EhJbTf3XF4Ez77gXACgH&_nc_ohc=URiC3ylt7roQ7kNvwEIfwdl&_nc_oc=AdkJoydaOPEBVMhF-CkzsaWz2a1LrX80o_3xLEsWgtdnhzloWzxOZTAvveQP1yrYmWI&_nc_zt=23&_nc_ht=scontent-bog2-2.xx&_nc_gid=5G7_4WtFpMcKsKDsfTzuOw&oh=00_AfJXDoDmFoO-nj4Z-a9qJT5ozZDVu3oYap5GzeJb_qUyhQ&oe=68245445"
+                    alt="Imagen 5"
+                  />
+                  <div class="caption">Rifas</div>
+                </div>
+                <div class="slide">
+                  <img
+                    src="https://play-lh.googleusercontent.com/xaOvGSWl-mzSwtIKpeA9vOY28_C4a_VcJKrFXVFO--gvPiBy_OilGSbsDnTWNzBEtxGS=w600-h300-pc0xffffff-pd"
+                    alt="Imagen 6"
+                  />
+                  <div class="caption">Bingo bailable</div>
                 </div>
               </div>
-            
-            </body>
-            </html>            
-        </main>
+            </div>
+          </body>
+        </html>
+      </main>
     </div>
-    
 
     <!-- Pie de página -->
     <footer>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/tuPerfil" class="facebook" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.twitter.com/tuPerfil" class="twitter" target="_blank">
-            <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/tuPerfil" class="instagram" target="_blank">
-            <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/tuPerfil" class="linkedin" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div>  
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/tuPerfil"
+          class="facebook"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.twitter.com/tuPerfil"
+          class="twitter"
+          target="_blank"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/tuPerfil"
+          class="instagram"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/tuPerfil"
+          class="linkedin"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
     </footer>
-</body>
+  </body>
 </html>
