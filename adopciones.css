@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lora', Georgia, "Times New Roman", serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -111,6 +111,19 @@ nav {
     margin: 30px auto;
     max-width: 1200px;
   }
+
+  li img {
+  width: 100%;
+  max-width: 300px; /* Ajusta el tamaño base de la imagen */
+  transition: transform 0.3s ease; /* Transición suave */
+  border-radius: 10px; /* Opcional: bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+li img:hover {
+  transform: scale(1.9); /* Aumenta el tamaño un 10% */
+  cursor: pointer;
+}
   
   .Mascotas li {
     background-color: #fffefb;
@@ -274,7 +287,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    font-family: Arial, sans-serif;
+      font-family: 'Lora', Georgia, "Times New Roman", serif;
 }
 
 footer a {
