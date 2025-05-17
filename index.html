@@ -1,80 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plantilla de Página principal</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  
+  <body>
     <!-- Cabecera -->
     <header class="estilomenu">
-        <section id="Logo"><img src="https://images.icon-icons.com/1949/PNG/512/free-30-instagram-stories-icons53_122600.png" alt="Logo Instagram" class="logo"></section>
-        <section id="Titulo">Fundación Salvando Huellas</section>
-       <!--<section id="Login" onclick="window.location.href='http://127.0.0.1:8000/admin/login/?next=/admin/'" style="cursor: pointer;">Login</section> -->
-        <section id="Login" style="cursor: pointer;"><a  href="http://127.0.0.1:8000/admin/login/?next=/admin/">Login</a></section>
+      <section id="Logo">
+        <img
+          src="https://images.icon-icons.com/1949/PNG/512/free-30-instagram-stories-icons53_122600.png"
+          alt="Logo Instagram"
+          class="logo"
+        />
+      </section>
+      <section id="Titulo">Fundación Salvando Huellas</section>
+      <!--<section id="Login" onclick="window.location.href='http://127.0.0.1:8000/admin/login/?next=/admin/'" style="cursor: pointer;">Login</section> -->
+      <section id="Login" style="cursor: pointer">
+        <a href="http://127.0.0.1:8000/admin/login/?next=/admin/">Login</a>
+      </section>
     </header>
 
     <!-- Barra de navegación -->
     <nav>
-        <ul class="nav" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Inicio</button>
-            </li>
-            <li class="nav-item" role="presentation"> 
-              <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" id="adopciones" onclick="window.location.href='adopciones.html'">Adopciones</button>
-            </li>
-            
-            <li class="nav-item" role="presentation">
-              <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="donaciones" onclick="window.location.href='donaciones.html'">Donaciones</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="contactanos" onclick="window.location.href='contactanos.html'">Contáctanos PQRS</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="quienessomos" onclick="window.location.href='quienessomos.html'">Quienes somos</button>
-              </li>
-          </ul>
+      <ul
+        class="nav"
+        id="pillNav2"
+        role="tablist"
+        style="
+          --bs-nav-link-color: var(--bs-white);
+          --bs-nav-pills-link-active-color: var(--bs-primary);
+          --bs-nav-pills-link-active-bg: var(--bs-white);
+        "
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+          >
+            Inicio
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active rounded-5"
+            id="home-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            id="adopciones"
+            onclick="window.location.href='adopciones.html'"
+          >
+            Adopciones
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="profile-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="donaciones"
+            onclick="window.location.href='donaciones.html'"
+          >
+            Donaciones
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="contactanos"
+            onclick="window.location.href='contactanos.html'"
+          >
+            Contáctanos PQRS
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            id="quienessomos"
+            onclick="window.location.href='quienessomos.html'"
+          >
+            Quienes somos
+          </button>
+        </li>
+      </ul>
     </nav>
 
     <!-- Contenedor principal -->
     <div class="container">
-        <!-- Barra lateral -->
-        <aside class="sidebar">
-            <h2 class="titulo-dona">Apadrina y Dona</h2>
-            <p><img src="https://ingetraining.com/site/wp-content/uploads/2020/04/IMAGEN-QR-BANCOLOMBIA-03-803x1024.png" alt=""></p>
-            <p><img src="https://www.elespectador.com/resizer/51fHHK2C-CIDnviNw7Xum_nsaFs=/arc-anglerfish-arc2-prod-elespectador/public/GFMSTY6UIZBUBDE2SPIXGWQVIU.jpg" alt=""></p>
-            <p><img src="https://vitawallet.io/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-18-at-16.28.58.jpeg" alt=""></p>
-        </aside>
+      <!-- Barra lateral -->
+      <aside class="sidebar">
+        <h2 class="titulo-dona">Apadrina y Dona</h2>
+        <p>
+          <img
+            src="https://ingetraining.com/site/wp-content/uploads/2020/04/IMAGEN-QR-BANCOLOMBIA-03-803x1024.png"
+            alt=""
+          />
+        </p>
+        <p>
+          <img
+            src="https://www.elespectador.com/resizer/51fHHK2C-CIDnviNw7Xum_nsaFs=/arc-anglerfish-arc2-prod-elespectador/public/GFMSTY6UIZBUBDE2SPIXGWQVIU.jpg"
+            alt=""
+          />
+        </p>
+        <p>
+          <img
+            src="https://vitawallet.io/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-18-at-16.28.58.jpeg"
+            alt=""
+          />
+        </p>
+      </aside>
 
-        <!-- Contenido principal -->
-        <main class="content">
-            <p><img src="/home/bayron/Descargas/SENA proyectos/ProfesoraIngrid/PROYECTO/Maquetaciion de interfaz grafica/Maquetacion-de-interfaz-grafica-version-1/imagenes/fotoFundacion.jpg" alt=""></p>
-            <p>Nuestra fundación se encuentra situada en el barrio Lombo parte alta, en el gasoducto.
-                Ven y conoce nuestros peludos!
-                ADOPTA Y DONA ALIMENTO,tus donaciones sostienen nuestra fundación y nos motivan a continuar con ésta ardua labor.</p>
-        </main>
+      <!-- Contenido principal -->
+      <main class="content">
+        <p><img src="./imagenes/fotoFundacion.jpg" alt="" /></p>
+        <p>
+          Nuestra fundación se encuentra situada en el barrio Lombo parte alta,
+          en el gasoducto. Ven y conoce nuestros peludos! ADOPTA Y DONA
+          ALIMENTO,tus donaciones sostienen nuestra fundación y nos motivan a
+          continuar con ésta ardua labor.
+        </p>
+      </main>
     </div>
 
     <!-- Pie de página -->
     <footer>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/tuPerfil" class="facebook" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.twitter.com/tuPerfil" class="twitter" target="_blank">
-            <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/tuPerfil" class="instagram" target="_blank">
-            <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/tuPerfil" class="linkedin" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div>         
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/tuPerfil"
+          class="facebook"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.twitter.com/tuPerfil"
+          class="twitter"
+          target="_blank"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/tuPerfil"
+          class="instagram"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/tuPerfil"
+          class="linkedin"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
     </footer>
-</body>
+  </body>
 </html>
