@@ -45,6 +45,7 @@ body {
 #Titulo {
     font-size: 1.5em;
     font-weight: bold;
+     font-family: 'Lora', Georgia, "Times New Roman", serif;
 }
 
 header {
@@ -93,7 +94,7 @@ nav {
 
 .contentp {
     background-color: #E2F0D9;  /*Verde muy claro pastel, representando naturaleza y frescura */
-    padding: 10%; /*texto*/
+    padding: 5%; /*texto*/
     text-align: auto; /* Centra el contenido de texto */
     width: 100%;
     
