@@ -1,105 +1,121 @@
 /* Estilos generales */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #F0F9F9; /* Fondo pastel suave para un ambiente acogedor */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f9f9;
 }
 
 /* Cabecera */
 
 .estilomenu {
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 10px 20px;
-    background-color: #8FCACA; /* Color de fondo pastel */
-    color: #FFFFFF; /* Color de texto blanco */
-    gap: 20px; /* Espacio entre Logo y Titulo */
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #8fcaca;
+  color: #ffffff;
+  gap: 20px;
 }
 
-#Logo, #Titulo {
-    margin: 10px 10px 10px 10px;
+#Logo,
+#Titulo {
+  margin: 10px 10px 10px 10px;
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto; /* Centra horizontalmente */
-  }
- 
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
 
 #Login {
-    margin-left: auto; /* Empuja el elemento hacia la derecha */
+  margin-left: auto;
 }
 
 /* Ajuste adicional para el Titulo si se desea */
 #Titulo {
-    font-size: 1.5em;
-    font-weight: bold;
-     font-family: 'Lora', Georgia, "Times New Roman", serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
 }
 
 header {
-    background-color: #8FCACA; /* Verde menta pastel, amigable y calmante */
-    color: #FFFFFF; /* Blanco para contraste */
-    padding: 20px;
-    text-align: center;
+  background-color: #8fcaca;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
 }
-
 
 /* Barra de navegación */
 nav {
-    background-color: #A1D6E2; /* Azul claro pastel, relajante */
-    color: #A1D6E2; /* Blanco */
+  background-color: #a1d6e2;
+  color: #a1d6e2;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between; /* Distribuye los elementos en horizontal */
-    padding: 0px 5px 10px 20%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px 10px 20%;
 }
 
 .nav {
-    display: flex;
-    gap: 80px; /* Espacio entre los elementos de la lista */   
+  display: flex;
+  gap: 80px;
+  --bs-nav-link-color: var(--bs-white);
+  --bs-nav-pills-link-active-color: var(--bs-primary);
+  --bs-nav-pills-link-active-bg: var(--bs-white);
 }
 
 .nav-item button {
-    padding: 8px 8px;
-    font-size: 14px;
-    background-color: #8FCACA;
-    border-radius: 10%;
-    border-color: #f2f7f7;
-    font-weight: bold;
+  padding: 8px 8px;
+  font-size: 14px;
+  background-color: #8fcaca;
+  border-radius: 10%;
+  border-color: #f2f7f7;
+  font-weight: bold;
 }
 
 /* Contenedor principal */
 .container {
-    display: flex;
-    flex: 1;
-    padding: auto;
-   }
+  display: flex;
+  flex: 1;
+  padding: auto;
+}
 
 /* Contenido principal */
 
 .main-content {
-    width: 100%;                       /* Ajusta el ancho para acompañar las barras laterales */
-    margin: 0 auto;                   /* Centra el contenedor principal */
-    padding: 30px;                    /* Espacio interno */
-    background-color: #FFFFFF;        /* Fondo blanco */
-    border: 1px solid #e0e0e0;        /* Borde suave alrededor */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
-    border-radius: 8px;               /* Bordes redondeados */
-    box-sizing: border-box;           /* Asegura que el padding no afecte el ancho total */
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 4px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
 }
 
 /*Noticiero y mision */
@@ -116,11 +132,11 @@ nav {
   padding: 25px;
   text-align: center;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  font-family: 'Times New Roman', Times, serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: "Times New Roman", Times, serif;
   width: 90%;
   max-width: 800px;
-  min-height: 800px; /* Alargado */
+  min-height: 800px;
   box-sizing: border-box;
 }
 
@@ -137,18 +153,17 @@ nav {
 
 .contentp iframe {
   width: 100%;
-  height: 810px; /* También alargamos el iframe */
+  height: 810px;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
 
 /*Mision y vision*/
 
 /* Estilo para el contenedor principal */
 .main-content {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   padding: 40px;
   background-color: #fdfdfd;
   border-radius: 12px;
@@ -196,61 +211,75 @@ nav {
   font-size: 24px;
   color: #2c3e50;
   margin-top: 40px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
-
-
-
 
 /* Pie de página */
 footer {
-    background-color: #302f2f;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-family: Arial, sans-serif;
+  background-color: #302f2f;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, sans-serif;
 }
 
 footer a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 footer button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 footer img {
-    width: 30px;
+  width: 30px;
 }
 
 footer p {
-    font-size: 12px;
+  font-size: 12px;
 }
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 .social-icons a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    transition: background-color 0.3s;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s;
 }
 .social-icons a:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
-input, select, textarea { margin-top: 5px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; } 
-button { margin-top: 20px; padding: 10px; background-color: #4CAF50; color: rgb(7, 0, 0); border: none; border-radius: 5px; cursor: pointer; } 
-button:hover { background-color: #45a049; }
+input,
+select,
+textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: rgb(7, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
