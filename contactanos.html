@@ -9,7 +9,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
     <link rel="stylesheet" href="contactanos.css" />
-    <script src="./contactanos.js"></script>
   </head>
   <body>
     <!-- Cabecera -->
@@ -33,16 +32,12 @@
 
     <!-- Barra de navegación -->
     <nav>
-      <ul class="nav" id="pillNav2" role="tablist">
+      <ul class="nav" role="tablist">
         <li class="nav-item" role="presentation">
           <button
             class="nav-link rounded-5"
-            id="contact-tab2"
             data-bs-toggle="tab"
             type="button"
-            role="tab"
-            aria-selected="false"
-            id="index"
             onclick="window.location.href='index.html'"
           >
             Inicio
@@ -51,27 +46,18 @@
         <li class="nav-item" role="presentation">
           <button
             class="nav-link active rounded-5"
-            id="home-tab2"
             data-bs-toggle="tab"
             type="button"
-            role="tab"
-            aria-selected="true"
-            id="adopciones"
             onclick="window.location.href='adopciones.html'"
           >
             Adopciones
           </button>
         </li>
-
         <li class="nav-item" role="presentation">
           <button
             class="nav-link rounded-5"
-            id="profile-tab2"
             data-bs-toggle="tab"
             type="button"
-            role="tab"
-            aria-selected="false"
-            id="donaciones"
             onclick="window.location.href='donaciones.html'"
           >
             Donaciones
@@ -80,12 +66,8 @@
         <li class="nav-item" role="presentation">
           <button
             class="nav-link rounded-5"
-            id="contact-tab2"
             data-bs-toggle="tab"
             type="button"
-            role="tab"
-            aria-selected="false"
-            id="contactanos"
             onclick="window.location.href='contactanos.html'"
           >
             Contáctanos PQRS
@@ -94,12 +76,8 @@
         <li class="nav-item" role="presentation">
           <button
             class="nav-link rounded-5"
-            id="contact-tab2"
             data-bs-toggle="tab"
             type="button"
-            role="tab"
-            aria-selected="false"
-            id="quienessomos"
             onclick="window.location.href='quienessomos.html'"
           >
             Quienes somos
@@ -108,7 +86,7 @@
       </ul>
     </nav>
 
-    <!-- Formulario PQRS  -->
+    <!-- Formulario PQRS -->
     <div class="form-container">
       <header class="titulopqrs">
         Formulario de Peticiones, Quejas y Reclamos
@@ -160,5 +138,8 @@
       </div>
       <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- JavaScript al final del body -->
+    <script src="./contactanos.js"></script>
   </body>
 </html>
