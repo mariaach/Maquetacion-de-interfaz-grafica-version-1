@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Cerrar modal al hacer clic en el botón
   cerrarModal.addEventListener("click", function () {
     modal.style.display = "none";
-    formulario.reset(); // Limpiar solo cuando se cierra correctamente
+    formulario.reset();
   });
 
   // También cerrar al hacer clic fuera del contenido
