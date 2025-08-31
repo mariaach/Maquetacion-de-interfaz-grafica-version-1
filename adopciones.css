@@ -17,11 +17,12 @@ body {
 
 .estilomenu {
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos */
+  align-items: center;
   padding: 10px 20px;
-  background-color: #8fcaca; /* Color de fondo pastel */
-  color: #ffffff; /* Color de texto blanco */
-  gap: 20px; /* Espacio entre Logo y Titulo */
+  background-color: #6b6a6a;
+  color: #ffffff;
+  gap: 20px;
+  background: linear-gradient(135deg, #9b9a9a, #414040);
 }
 
 #Logo,
@@ -30,65 +31,97 @@ body {
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
   display: block;
-  margin: 0 auto; /* Centra horizontalmente */
+  margin: 0 auto;
+  border-radius: 20%;
 }
 
 #Login {
-  margin-left: auto; /* Empuja el elemento hacia la derecha */
+  margin-left: auto;
 }
 
-/* Ajuste adicional para el Titulo si se desea */
+/* Primero declaras la fuente */
+@font-face {
+  font-family: 'mifuente'; /* Nombre que tú le das */
+  src: url('./fonts/Animal\ Insting.ttf') format('truetype'); /* Ruta relativa */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Luego aplicas la fuente al ID Titulo */
 #Titulo {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-family: 'mifuente', sans-serif;
+  font-size: 6rem;
+  color:#e98162;   /* Beige/Marfil */
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
 header {
-  background-color: #8fcaca; /* Verde menta pastel, amigable y calmante */
-  color: #ffffff; /* Blanco para contraste */
+
   padding: 20px;
   text-align: center;
+  header {
+  background: linear-gradient(90deg, #3E3E3E, #2C2C2C);
+}
+
 }
 
 /* Barra de navegación */
+
 nav {
-  background-color: #a1d6e2; /* Azul claro pastel, relajante */
-  color: #a1d6e2; /* Blanco */
-}
+  background-color: #cac8c8 ;
+  color: #acafaf;
+  }
 
 nav {
   display: flex;
-  justify-content: space-between; /* Distribuye los elementos en horizontal */
+  justify-content: space-between;
   padding: 0px 5px 10px 20%;
 }
 
 .nav {
   display: flex;
-  gap: 80px; /* Espacio entre los elementos de la lista */
+  gap: 80px;
   --bs-nav-link-color: var(--bs-white);
   --bs-nav-pills-link-active-color: var(--bs-primary);
   --bs-nav-pills-link-active-bg: var(--bs-white);
 }
 
 .nav-item button {
-  padding: 8px 8px;
-  font-size: 14px;
-  background-color: #8fcaca;
-  border-radius: 10%;
-  border-color: #f2f7f7;
+  font-size: 20px;
+  background-color: #F5E9DA;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
   font-weight: bold;
+  transition: all 0.3s ease;
+}
+.nav-item button:hover {
+  background-color: #E97451;
+  color: white;
+}
+
+
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(90deg, #ffffff, #f8edd7);
+  color: #2a2a2a;
 }
 
 /* Contenedor principal */
 .container {
   display: flex;
-  flex: 1;
-  padding: auto;
+  gap: 40px;
+  padding: 40px;
 }
+
 
 /* Contenido principal */
 
@@ -101,6 +134,7 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
   border-radius: 8px; /* Bordes redondeados */
   box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  font-size: 20px;
 }
 
 .Mascotas {
@@ -108,11 +142,11 @@ nav {
   display: flex; /* Alinea los elementos en fila */
   flex-wrap: wrap; /* Permite que se acomoden en varias filas si no caben */
   gap: 20px; /* Espacio entre mascotas */
-  justify-content: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra horizontalmente */ 
   padding: 0;
   margin: 30px auto;
   max-width: 1200px;
-}
+ }
 
 li img {
   width: 100%;
@@ -151,35 +185,30 @@ li img:hover {
   margin-bottom: 10px;
 }
 
-.Mascotas h2 {
-  font-size: 20px;
-  color: #333;
-  margin: 10px 0 5px;
-}
-
 .mascota-descripcion,
 .producto-descripcion {
-  font-size: 14px;
+  font-size: 20px;
   color: #666;
   margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .mascota-edad,
 .producto-precio {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
-  color: #27ae60; /* Verde para precios o info importante */
+  color: #27ae60; /* Verde para info importante */
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Encabezados en el contenido principal */
 
 .main-content h2 {
-  font-size: 30px;
   color: #2a2a2a;
   text-align: center;
   margin: 40px 40px 40px 40px;
   font-weight: bold;
-  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-family: 'Poppins', sans-serif;
   padding-bottom: 5px;
 }
 
@@ -193,6 +222,7 @@ li img:hover {
   font-size: 1em;
   cursor: pointer;
   transition: background-color 0.3s; /* Transición suave en el cambio de color */
+  font-family: 'Poppins', sans-serif;
 }
 
 .main-content .button:hover {
@@ -208,36 +238,42 @@ li img:hover {
   padding: 1.5rem;
   margin: auto;
   border-radius: 12px;
-  font-family: "Lora", Georgia, "Times New Roman", serif;
-  color: #333;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+ 
 }
 
 .sidebarde-mensaje {
-  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
-  color: #747775;
+  color: #888686;
   text-align: center;
+  margin: 200px 50px 0px 50px;
 }
 
 .sidebarde h6 {
-  font-size: 25px;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .sidebarde h2,
 .sidebarde h5 {
-  color: #070707;
+  color: #000000;
   margin-top: 1.2rem;
   margin-bottom: 0.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
 }
 
 .sidebarde p {
   margin-bottom: 1rem;
   line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
 }
 
 .sidebarde strong {
-  color: #264653;
+  color: #000000;
   font-weight: 600;
 }
 
@@ -263,7 +299,7 @@ li img:hover {
 
 .sidebarde ol li {
   margin-bottom: 0.7rem;
-  color: #555;
+  color: #000000;
 }
 
 .et_pb_toggle_title {
@@ -288,7 +324,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
-  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 footer a {
@@ -308,6 +344,7 @@ footer img {
 
 footer p {
   font-size: 12px;
+  font-family: 'Poppins', sans-serif;
 }
 .social-icons {
   display: flex;

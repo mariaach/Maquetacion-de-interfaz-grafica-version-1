@@ -19,9 +19,10 @@ body {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #8fcaca;
+  background-color: #6b6a6a;
   color: #ffffff;
   gap: 20px;
+  background: linear-gradient(135deg, #9b9a9a, #414040);
 }
 
 #Logo,
@@ -30,35 +31,51 @@ body {
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
+  border-radius: 20%;
 }
 
 #Login {
   margin-left: auto;
 }
 
+/* Primero declaras la fuente */
+@font-face {
+  font-family: 'mifuente'; /* Nombre que tú le das */
+  src: url('./fonts/Animal\ Insting.ttf') format('truetype'); /* Ruta relativa */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Luego aplicas la fuente al ID Titulo */
 #Titulo {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-family: 'mifuente', sans-serif;
+  font-size: 6rem;
+  color:#e98162;   /* Beige/Marfil */
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
 header {
-  background-color: #8fcaca;
-  color: #ffffff;
+
   padding: 20px;
   text-align: center;
+  header {
+  background: linear-gradient(90deg, #3E3E3E, #2C2C2C);
+}
+
 }
 
 /* Barra de navegación */
 
 nav {
-  background-color: #a1d6e2;
-  color: #a1d6e2;
-}
+  background-color: #cac8c8 ;
+  color: #acafaf;
+  }
 
 nav {
   display: flex;
@@ -75,70 +92,123 @@ nav {
 }
 
 .nav-item button {
-  padding: 8px 8px;
-  font-size: 14px;
-  background-color: #8fcaca;
-  border-radius: 10%;
-  border-color: #f2f7f7;
+  font-size: 20px;
+  background-color: #F5E9DA;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
   font-weight: bold;
+  transition: all 0.3s ease;
+}
+.nav-item button:hover {
+  background-color: #E97451;
+  color: white;
+}
+
+
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(90deg, #ffffff, #f8edd7);
+  color: #2a2a2a;
 }
 
 /* Contenedor principal */
 .container {
   display: flex;
-  flex: 1;
-  padding: auto;
+  gap: 40px;
+  padding: 40px;
 }
 
 /* Barra lateral */
+.sidebar {
+  width: 280px;
+  color: #333;;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
 .titulo-dona {
-  font-size: 30px;
-  color: #2a2a2a;
-  text-align: center;
-  margin: 40px 40px 40px 40px;
+  font-size: 32px;
+  color: #333;
   font-weight: bold;
-  font-family: "Lora", Georgia, "Times New Roman", serif;
-  padding-bottom: 5px;
+  text-align: center;
+  margin: 0 0 30px auto;
+  display: block;
+  width: fit-content;
+  border-bottom: 2px solid #2a2a2a33;
+  padding-bottom: 8px;
 }
 
 .sidebar img {
-  width: 100%;
-  max-width: 140px;
-  height: auto;
   display: block;
-  margin: 10px auto;
+  max-width: 200px;
+  width: 100%;
+  margin: 20px 0 20px auto;
   border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.sidebar img:hover {
+  transform: scale(1.05);
 }
 
 /* Contenido principal */
 .content {
-  padding: 20px;
-  background-color: #fffdf6;
+  flex: 1;
+  padding: 30px;
+  background-color: #e6dede;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 800px;
-  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
 }
 
-.content p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #444;
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-family: "Lora", Georgia, "Times New Roman", serif;
-}
-
-.content img {
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 700px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 10px;
+  height: 100%;
+  background: url("./imagenes/Portada.png") center/cover no-repeat;
+  opacity: 0.8; /* transparencia */
+  z-index: 0;   /* queda detrás */
 }
+
+.content p,
+.content img {
+  position: relative;
+  z-index: 1; /* se muestran encima del fondo */
+}
+
+.texto-fondo {
+  font-size: 20px;             /* tamaño legible */
+  line-height: 1.8;            /* separación entre líneas */
+  color: #fff;                 /* texto blanco */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: center;          /* centrado */
+  background: rgba(0, 0, 0, 0.5);  /* fondo semitransparente */
+  padding: 20px 30px;          /* espacio interno */
+  border-radius: 12px;         /* bordes redondeados */
+  display: inline-block;       /* ajusta el bloque al texto */
+  margin-top: 700px;            /* espacio hacia arriba */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* sombra */
+}
+
+.texto-fondo strong {
+  color: #ffd700;   /* resalta la parte importante en dorado */
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
 
 /* Pie de página */
 footer {
@@ -146,7 +216,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 footer a {

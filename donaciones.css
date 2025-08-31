@@ -19,9 +19,10 @@ body {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #8fcaca;
+  background-color: #6b6a6a;
   color: #ffffff;
   gap: 20px;
+  background: linear-gradient(135deg, #9b9a9a, #414040);
 }
 
 #Logo,
@@ -30,36 +31,51 @@ body {
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
+  border-radius: 20%;
 }
 
 #Login {
   margin-left: auto;
 }
 
-/* Ajuste adicional para el Titulo si se desea */
+/* Primero declaras la fuente */
+@font-face {
+  font-family: 'mifuente'; /* Nombre que tú le das */
+  src: url('./fonts/Animal\ Insting.ttf') format('truetype'); /* Ruta relativa */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Luego aplicas la fuente al ID Titulo */
 #Titulo {
-  font-size: 1.5em;
-  font-weight: bold;
-  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-family: 'mifuente', sans-serif;
+  font-size: 6rem;
+  color:#e98162;   /* Beige/Marfil */
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
 header {
-  background-color: #8fcaca;
-  color: #ffffff;
+
   padding: 20px;
   text-align: center;
+  header {
+  background: linear-gradient(90deg, #3E3E3E, #2C2C2C);
+}
+
 }
 
 /* Barra de navegación */
+
 nav {
-  background-color: #a1d6e2;
-  color: #a1d6e2;
-}
+  background-color: #cac8c8 ;
+  color: #acafaf;
+  }
 
 nav {
   display: flex;
@@ -76,38 +92,65 @@ nav {
 }
 
 .nav-item button {
-  padding: 8px 8px;
-  font-size: 14px;
-  background-color: #8fcaca;
-  border-radius: 10%;
-  border-color: #f2f7f7;
+  font-size: 20px;
+  background-color: #F5E9DA;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
   font-weight: bold;
+  transition: all 0.3s ease;
+}
+.nav-item button:hover {
+  background-color: #E97451;
+  color: white;
 }
 
-/* Contenedor principal */
-.container {
-  display: flex;
-  flex: 1;
-  padding: auto;
+
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(90deg, #ffffff, #f8edd7);
+  color: #2a2a2a;
 }
+
+
 
 /* Contenido principal */
-
 .contentp {
-  background-color: #e2f0d9;
+  position: relative; /* Necesario para el pseudo-elemento */
+  background: url("./imagenes/Portada.png") center/cover no-repeat;
   padding: 5%;
-  text-align: auto;
   width: 100%;
+  height: 100%;
+  z-index: 0;
 }
+
+/* Fondo con opacidad independiente */
+.contentp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(226, 240, 217, 0.4); /* tu color con transparencia */
+  z-index: -1; /* se queda detrás del contenido */
+}
+
 
 .content {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  
 }
 
 .slider-container {
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: auto;
   overflow: hidden;
   position: relative;
   margin: auto;
@@ -115,22 +158,22 @@ nav {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.slider {
-  display: flex;
-  width: calc(600px * 6);
-  animation: slide 18s infinite;
-}
-
 .slide {
   position: relative;
-  width: 600px;
-  height: 400px;
+  width: 100%;
+
 }
 
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.slider {
+  display: flex;
+  width: calc(600px * 6);
+  animation: slide 30s infinite;
 }
 
 .caption {
