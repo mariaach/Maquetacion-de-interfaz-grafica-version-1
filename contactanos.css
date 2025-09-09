@@ -115,115 +115,55 @@ body {
   color: #2a2a2a;
 }
 
-/* Contenedor principal */
-.container {
+/* Contenedor del iframe */
+.formulario-container {
   display: flex;
-  gap: 40px;
-  padding: 40px;
-}
-
-
-/* Contenedor para el título y el formulario */
-.form-container {
-  max-width: 400px;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  padding: 20px;
-  background-color: #a1d6e2;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-/* Estilo del título */
-.titulopqrs {
-  color: #ffffff;
-  font-size: 20px;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-/* Estilos del formulario */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px;
-}
-
-/* Estilos de los campos del formulario */
-form label {
-  font-size: 16px;
-  margin-top: 10px;
-  text-align: left;
-  width: 100%;
-}
-
-form input[type="text"],
-form input[type="email"],
-form select,
-form textarea {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-/* Estilo para el botón */
-form button[type="submit"] {
-  padding: 8px 15px;
-  font-size: 14px;
-  color: white;
-  background-color: #45a049;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 15px;
-}
-
-form button[type="submit"]:hover {
-  background-color: #63b668;
-}
-
-/*Estilos del modal*/
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;   /* Toda la pantalla */
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
-.modal-content {
-  background-color: #fff;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  text-align: center;
+/* Imagen de fondo con opacidad */
+.formulario-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url("./imagenes/Portada.png") center/cover no-repeat;
+  opacity: 0.6; /* Controla la transparencia */
+  z-index: 1;
 }
 
-.modal-content button {
-  margin-top: 15px;
-  padding: 6px 14px;
-  background-color: #4caf50;
-  color: white;
+/* El iframe debe ir encima */
+.formulario-container iframe {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 800px;
+  height: 700px; /* Ajusta según el formulario */
+  border-radius: 12px;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  background: #fff;
 }
 
-.modal-content button:hover {
-  background-color: #45a049;
+
+/* Estilo al iframe */
+.formulario-container iframe {
+  width: 50%;
+  max-width: 600px;
+  height: 1200px;   /* Aumenta la altura */
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  overflow: hidden; /* Oculta cualquier scroll sobrante */
 }
+
+
 
 /* Pie de página */
 footer {

@@ -77,38 +77,18 @@
     </nav>
 
     <!-- Formulario PQRS -->
-    <div class="form-container">
-      <header class="titulopqrs">
-        Formulario de Peticiones, Quejas y Reclamos
-      </header>
-      <form id="formularioPQR">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="tipo">Tipo de Solicitud:</label>
-        <select id="tipo" name="tipo" required>
-          <option value="peticion">Petición</option>
-          <option value="queja">Queja</option>
-          <option value="reclamo">Reclamo</option>
-        </select>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-
-    <!-- Modal emergente -->
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <p>Se ha enviado el mensaje de forma correcta</p>
-        <button id="cerrarModal">Cerrar</button>
-      </div>
-    </div>
+<div class="formulario-container">
+  <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSfZJOve6WWV5-Eon0EKXR0e2RyaL1fvKp70bZLY1U96MnUFcw/viewform?embedded=true"
+    width="800" 
+    height="500" 
+    frameborder="0" 
+    marginheight="0" 
+    marginwidth="0">
+    Cargando…
+  </iframe>
+</div>
 
     <!-- Pie de página -->
     <footer>
@@ -130,6 +110,7 @@
     </footer>
 
     <!-- JavaScript al final del body -->
-    <script src="./contactanos.js"></script>
+  
   </body>
 </html>
+
